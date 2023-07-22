@@ -1,0 +1,18 @@
+
+CONTROLLER
+@Controller /  @RestController
+Client'in etkilesime gectigi katmandir
+Gelen requestleri mapleyip yapilacak islem varsa
+Service katmanina yonlendiren katmandir.
+
+SERVICE
+@Service
+Controller ile Repository arasinda kopru gorevi gorur.
+controllerden gelen requestler uzerinde islem yapilmak isteniyorsa yaparak
+repositorye yonlendiren katmandir
+
+REPOSITORY
+@Repository
+Dataya erisim saglanan class, DB'ye baglandigimiz katman.
+repositoryden gelen bilgiler dogrudan controllerda kullanilmak yerine once servicede kontrolden geciriliyor,
+donen bilginin aynisini kullaniciya donmek istemeyebiliriz.

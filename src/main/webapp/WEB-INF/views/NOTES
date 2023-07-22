@@ -1,0 +1,25 @@
+
+studentForm
+    tablo gibi sutunlar olusturulmus
+    first name
+    last name
+    grade
+    kullaniciya kutucukla gosteriliyor
+
+
+
+
+    modelattribute  view katmani ile controller arasinda datanin tasinmasini saglar.
+
+    student isminde bir model olusturulacak ve formdan bilgiler alinarak student objesine set edilecek
+
+     @GetMapping("/new")
+        public String sendStudentForm(@ModelAttribute("student") Student student) {
+            return "studentForm";
+        }
+
+
+
+
+    submit butonuna tiklandiginda action="saveStudent" a yonloendirilecek, yani yeni bir requeste--> post()
+

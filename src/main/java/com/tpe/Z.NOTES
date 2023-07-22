@@ -1,0 +1,12 @@
+
+<body>
+
+body tag i icerisindeki alanlar tarayicimiza yansir.
+${} degiskenleri ifade eder
+
+
+${message}
+${messagebody}
+
+
+</body>
